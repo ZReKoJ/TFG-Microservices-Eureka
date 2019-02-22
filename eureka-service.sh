@@ -1,6 +1,6 @@
 #!/bin/sh
 SERVICE_NAME=eureka-service
-PATH_TO_JAR=/home/local/MyProject/MyJar.jar
+PATH_TO_JAR=/home/TFG-Microservices-Eureka/target/eureka-1.0-SNAPSHOT.jar
 PID_PATH_NAME=/tmp/eureka-service-pid
 case $1 in
     start)
