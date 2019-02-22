@@ -1,0 +1,12 @@
+[Unit]
+Description = Eureka Service
+After network.target = eureka-service.service
+
+[Service]
+Type = forking
+ExecStart = /usr/local/bin/eureka-service.sh start
+ExecStop = /usr/local/bin/eureka-service.sh stop
+ExecReload = /usr/local/bin/eureka-service.sh reload
+
+[Install]
+WantedBy=multi-user.target
